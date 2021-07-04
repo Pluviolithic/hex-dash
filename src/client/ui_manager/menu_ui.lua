@@ -21,10 +21,11 @@ local function get_menu(props)
         GridLayout = roact.createElement("UIGridLayout", {
             CellSize = UDim2.fromScale(1, 0.3);
         });
+        -- The weird names are for the grid layout to sort them.
         ASpectateButton = roact.createElement("TextButton", {
             TextScaled = true;
-            BackgroundColor3 = Color3.fromRGB(170, 255, 255);
             Text = "Spectate";
+            BackgroundColor3 = Color3.fromRGB(170, 255, 255);
             [roact.Event.Activated] = function()
                 store:dispatch(actions.switch_spectate())
             end;
@@ -33,8 +34,8 @@ local function get_menu(props)
         });
         BAFKButton = roact.createElement("TextButton", {
             TextScaled = true;
-            BackgroundColor3 = Color3.fromRGB(170, 255, 255);
             Text = props.afk_status;
+            BackgroundColor3 = Color3.fromRGB(170, 255, 255);
             [roact.Event.Activated] = function()
                 if os.time() - last_switched < 0.5 then return end
                 last_switched = os.time()
@@ -43,6 +44,16 @@ local function get_menu(props)
         }, {
             UICorner = roact.createElement("UICorner");
         });
+        CShop = roact.createElement("TextButton", {
+            TextScaled = true;
+            Text = "Shop";
+            BackgroundColor3 = Color3.fromRGB(170, 255, 255);
+            [roact.Event.Activated] = function()
+                print("Opening shop.")
+            end;
+        }, {
+            UICorner = roact.createElement("UICorner");
+        })
     })
 end
 
