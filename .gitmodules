@@ -7,3 +7,6 @@
 [submodule "src/shared/roact-rodux"]
 	path = src/shared/roact-rodux
 	url = https://github.com/Roblox/roact-rodux
+[submodule "src/server/--force"]
+	path = src/server/--force
+	url = https://github.com/Kampfkarren/Roblox.git
