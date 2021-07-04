@@ -7,9 +7,6 @@
 [submodule "src/shared/roact-rodux"]
 	path = src/shared/roact-rodux
 	url = https://github.com/Roblox/roact-rodux
-[submodule "src/server/--name"]
-	path = src/server/--name
-	url = git@github.com:Kampfkarren/Roblox.git
 [submodule "src/server/Roblox"]
-	path = src/server/Roblox
+	path = src/server/Datastore2
 	url = git@github.com:Kampfkarren/Roblox.git
