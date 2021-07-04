@@ -1,0 +1,38 @@
+{
+  "name": "rodux_testing",
+  "tree": {
+    "$className": "DataModel",
+
+    "Players": {
+      "$properties": {
+        "RespawnTime": 0
+      }
+    },
+
+    "ReplicatedStorage": {
+      "Common": {
+        "$path": "src/shared"
+      }
+    },
+
+    "ServerScriptService": {
+      "Server": {
+        "$path": "src/server"
+      }
+    },
+
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "Client": {
+          "$path": "src/client"
+        }
+      }
+    },
+
+    "SoundService": {
+      "$properties": {
+        "RespectFilteringEnabled": true
+      }
+    }
+  }
+}
