@@ -49,7 +49,7 @@ local function get_menu(props)
             Text = "Shop";
             BackgroundColor3 = Color3.fromRGB(170, 255, 255);
             [roact.Event.Activated] = function()
-                print("Opening shop.")
+                store:dispatch(actions.switch_shop())
             end;
         }, {
             UICorner = roact.createElement("UICorner");

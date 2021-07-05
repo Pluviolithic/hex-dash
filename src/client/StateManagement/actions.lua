@@ -11,4 +11,8 @@ actions.change_spectated = make_action_creator("change_spectated", function(dire
     }
 end)
 
+actions.switch_shop = make_action_creator("switch_shop", function()
+    return {}
+end)
+
 return actions

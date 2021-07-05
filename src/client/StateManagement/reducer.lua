@@ -6,7 +6,7 @@ local rodux = require(replicated_storage.Common.Rodux)
 local shallow_copy = require(replicated_storage.Common.utils).shallow_copy
 local initial_state = require(replicated_storage.Common.initial_states).get_initial_main_state()
 
-function reducer_methods.switch_spectate(state) -- action isn't important here
+function reducer_methods.switch_spectate(state)
     local new_state = shallow_copy(state)
     new_state.client_info = shallow_copy(new_state.client_info)
     if state.client_info.spectate_enabled then
@@ -30,6 +30,13 @@ function reducer_methods.change_spectated(state, action)
     else
         new_state.client_info.spectate_index = new_spectate_index
     end
+    return new_state
+end
+
+function reducer_methods.switch_shop(state)
+    local new_state = shallow_copy(state)
+    new_state.client_info = shallow_copy(state.client_info)
+    new_state.client_info.shop_enabled = not new_state.client_info.shop_enabled
     return new_state
 end
 
