@@ -10,3 +10,6 @@
 [submodule "DataStore2"]
 	path = src/server/Roblox
 	url = git@github.com:Kampfkarren/Roblox.git
+[submodule "src/server/Roblox"]
+	path = src/server/Roblox
+	url = git@github.com:Kampfkarren/Roblox.git
