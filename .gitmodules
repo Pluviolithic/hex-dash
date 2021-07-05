@@ -9,4 +9,4 @@
 	url = https://github.com/Roblox/roact-rodux
 [submodule "src/server/Roblox"]
 	path = src/server/Roblox
-	url = git@github.com:Kampfkarren/Roblox.git
+	url = https://github.com/Kampfkarren/Roblox
