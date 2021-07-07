@@ -8,11 +8,11 @@ local store = require(client.StateManagement.store)
 local main_app = roact.createElement(roact_rodux.StoreProvider, {
     store = store;
 }, {
-    Main = roact.createElement("ScreenGui", {ResetOnSpawn = false}, {
-        MenuFrame = roact.createElement(require(script.menu_ui));
-        StatusUI = roact.createElement(require(script.status_ui));
-        SpectateUI = roact.createElement(require(script.spectate_ui));
-    });
+    Main = roact.createElement(
+        "ScreenGui",
+        {ResetOnSpawn = false},
+        require(client.ui_manager.interfaces)
+    );
 })
 
 roact.mount(main_app, player_gui)
