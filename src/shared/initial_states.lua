@@ -6,9 +6,16 @@ function initial_states.get_initial_player_state()
             cash = 0;
             wins = 0;
             votes = 0;
-            pets = {};
-            trails = {};
-            titles = {};
+            pets = {
+                -- [pet_name] = true;
+            };
+            trails = {
+                -- [trail_name = true;
+            };
+            equipped_items = {
+                -- pet = pet_name
+                -- trail = trail_name
+            };
         };
         team = "Neutral";
         afk = false;

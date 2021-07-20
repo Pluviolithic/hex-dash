@@ -1,7 +1,7 @@
 local players = game:GetService("Players")
-local store_management = game:GetService("ServerScriptService").Server.StateManagement
-local store = require(store_management.store)
-local actions = require(store_management.actions)
+local state_management = game:GetService("ServerScriptService").Server.StateManagement
+local store = require(state_management.store)
+local actions = require(state_management.actions)
 local player_manager = {
     minimum = 2;
 }
